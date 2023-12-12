@@ -36,7 +36,8 @@ fig1 = px.scatter_mapbox(
 )
 fig1.update_layout(mapbox_style="carto-positron")
 
-df_homeType = df.value_counts('homeType').reset_index().rename(columns = {0: 'Count'})
+df_homeType = df.value_counts('homeType').reset_index()
+df_homeType.columns = ['homeType', 'Count']
 
 # fig2 = px.pie(
 #     df_homeType,
@@ -44,6 +45,7 @@ df_homeType = df.value_counts('homeType').reset_index().rename(columns = {0: 'Co
 #     values='Count', 
 #     title = 'Distribution of Home Types'
 # )
+
 fig2 = go.Figure(data=[go.Pie(labels=df_homeType['homeType'], values=df_homeType['Count'])])
 fig2.update_layout(title='Distribution of Home Types')
 
