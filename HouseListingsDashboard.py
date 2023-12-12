@@ -39,13 +39,6 @@ fig1.update_layout(mapbox_style="carto-positron")
 df_homeType = df.value_counts('homeType').reset_index()
 df_homeType.columns = ['homeType', 'Count']
 
-# fig2 = px.pie(
-#     df_homeType,
-#     names='homeType',
-#     values='Count', 
-#     title = 'Distribution of Home Types'
-# )
-
 fig2 = go.Figure(data=[go.Pie(labels=df_homeType['homeType'], values=df_homeType['Count'])])
 fig2.update_layout(title='Distribution of Home Types')
 
@@ -121,8 +114,8 @@ def make_house_prediction(bathrooms, bedrooms, livingArea, homeType, city_user):
 
 st.set_page_config(
     page_title="Your App Title",
-    page_icon="📊",  # You can set an icon if you like
-    layout="wide",    # Use "wide" layout for a wider page
+    page_icon="📊", 
+    layout="wide",    
 )
 
 st.markdown(f"<h1 style='text-align: center;'>Estimate the cost of a house in Utah County</h1>", unsafe_allow_html= True)
