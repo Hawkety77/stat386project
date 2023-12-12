@@ -1,9 +1,7 @@
 streamlit
 pandas
 re
-plotly.express
+plotly
 xgboost
-sklearn.model_selection
-sklearn.model_selection
-sklearn.metrics
+sklearn
 numpy
