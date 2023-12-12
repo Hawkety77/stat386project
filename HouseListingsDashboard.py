@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import re
 import plotly.express as px
+import plotly.graph_objects as go
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
@@ -43,6 +44,8 @@ df_homeType = df.value_counts('homeType').reset_index().rename(columns = {0: 'Co
 #     values='Count', 
 #     title = 'Distribution of Home Types'
 # )
+fig2 = go.Figure(data=[go.Pie(labels=df_homeType['homeType'], values=df_homeType['Count'])])
+fig2.update_layout(title='Distribution of Home Types')
 
 fig3 = px.scatter(df[df['homeType'].isin(['SINGLE_FAMILY', 'TOWNHOUSE', 'CONDO'])], 
                  'livingArea', 
@@ -147,7 +150,7 @@ col1.plotly_chart(fig1, use_container_width=True)
 
 col2.plotly_chart(fig4, use_container_width=True)
 
-# col1.plotly_chart(fig2, use_container_width=True)
+col1.plotly_chart(fig2, use_container_width=True)
 
 col2.plotly_chart(fig3, use_container_width=True)
 
