@@ -35,14 +35,14 @@ fig1 = px.scatter_mapbox(
 )
 fig1.update_layout(mapbox_style="carto-positron")
 
-df_homeType = df.value_counts('homeType').reset_index()
+df_homeType = df.value_counts('homeType').reset_index().rename(columns = {0: 'Count'})
 
-fig2 = px.pie(
-    df_homeType,
-    names='homeType',
-    values=0, 
-    title = 'Distribution of Home Types'
-)
+# fig2 = px.pie(
+#     df_homeType,
+#     names='homeType',
+#     values='Count', 
+#     title = 'Distribution of Home Types'
+# )
 
 fig3 = px.scatter(df[df['homeType'].isin(['SINGLE_FAMILY', 'TOWNHOUSE', 'CONDO'])], 
                  'livingArea', 
@@ -147,7 +147,7 @@ col1.plotly_chart(fig1, use_container_width=True)
 
 col2.plotly_chart(fig4, use_container_width=True)
 
-col1.plotly_chart(fig2, use_container_width=True)
+# col1.plotly_chart(fig2, use_container_width=True)
 
 col2.plotly_chart(fig3, use_container_width=True)
 
