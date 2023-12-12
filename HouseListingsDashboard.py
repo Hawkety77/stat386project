@@ -113,7 +113,7 @@ def make_house_prediction(bathrooms, bedrooms, livingArea, homeType, city_user):
 ##### Streamlit ######
 
 st.set_page_config(
-    page_title="Your App Title",
+    page_title="Utah County Housing",
     page_icon="📊", 
     layout="wide",    
 )

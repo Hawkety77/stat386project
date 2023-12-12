@@ -13,11 +13,24 @@ Feedback Part 2 (Data Collection)
 
 First draft SHA -> 900e32af3d2816fb4454c82d21a20c6821df9a1c
 
-I chose to solicit feedback from Andrew Bargeron, Aidan Cooney, and Daphne Lesueur. 
+I chose to solicit feedback from Andrew Bargeron, Daphne Lesueur, and my mom (for a non statistical audience). The feedback
+was overwhelmingly positive. They all felt that the process was well explained and easy to follow despite the data Collection
+process being difficult to understand in the first place. My Mom liked how it was engaging to her even though she did not
+understand the code. They all provided feedback for correcting small errors. I fixed
+small errors in my code, and addressed the formatting to make it more legible.
 
 
 Feedback Part 3 (Data Analysis)
 
+I chose to solicit feedback from Andrew Bargeron, Daphne Lesueur, and my mom (for a non statistical audience). They all liked
+what I had done with my analysis, and found it easy to follow with how I asked my questions, and answered them. I had one of my
+visualizations mixed up when I moved everyting from a word document to my website and Andrew was able to point that out so I could
+fix it. They recommended that I take one more pass through to correct any grammatical mistakes I made.
 
 
 Feedback Part 4 (Streamlit App)
+
+I chose to solicit feedback from Andrew Bargeron, Daphne Lesueur, and my mom (for a non statistical audience), and even Dr. Tass. Andrew commented on 
+how easy the dashboard is to use and understand. They all enjoyed that the charts were interactive, and that there was a tool at the
+beginning that you could mess around with in a "what if" sort of way. None of them had anything to say that would require me to alter the
+dasboard.
