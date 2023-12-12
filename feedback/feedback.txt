@@ -1,7 +1,23 @@
+Feedback Part 1
+
 Final Topic -> Utah County Housing
 Related Question -> How are the features of a home in Utah County related to its list price
 
-I choose to solicit feedback from Andrew Bargeron and Aidan Coons. They both agreed that the topic of my project
+I choose to solicit feedback from Andrew Bargeron and Aidan Cooney. They both agreed that the topic of my project
 was good, and would be solid grounds for analysis and interesting insights. They both pointed out that it could make
 my project more challanging (in a good way) if I included more than one set of data (scraping from more than just
 one API.) I agreed with them, and have since added more data to the analysis to draw additional insights.
+
+
+Feedback Part 2 (Data Collection) 
+
+First draft SHA -> 900e32af3d2816fb4454c82d21a20c6821df9a1c
+
+I chose to solicit feedback from Andrew Bargeron, Aidan Cooney, and Daphne Lesueur. 
+
+
+Feedback Part 3 (Data Analysis)
+
+
+
+Feedback Part 4 (Streamlit App)

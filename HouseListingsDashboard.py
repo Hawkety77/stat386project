@@ -152,3 +152,5 @@ col2.plotly_chart(fig3, use_container_width=True)
 st.plotly_chart(fig5, use_container_width=True)
 
 st.text('*This is not comparing the price of an identical home in each city (i.e. Houses in Woodland Hills are much larger than houses in Provo)')
+
+st.text('see https://github.com/Hawkety77/stat386project for more information on how this data was collected and analyzed')
